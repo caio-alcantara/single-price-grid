@@ -1,0 +1,194 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  background-color: #e5eff5;
+}
+
+main {
+  padding: 70px 30px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "card1 card1" "card2 card2" "card3 card3";
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 800px;
+}
+
+.card-1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: card1;
+  border-radius: 10px 10px 0px 0px;
+  background-color: white;
+}
+
+.card-1 h1 {
+  font-size: 1.2em;
+  color: #2ab2af;
+  padding-bottom: 20px;
+}
+
+.card-1 p {
+  padding-bottom: 20px;
+}
+
+.card-1 p span {
+  color: #c0df34;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.card-1 #p1 {
+  line-height: 1.8em;
+  padding-bottom: 5px;
+  font-size: 14px;
+  color: #98a6bd;
+}
+
+.card-2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: card2;
+  background-color: #2ab2af;
+  color: white;
+  padding-bottom: 20px;
+}
+
+.card-2 h1 {
+  font-size: 1.2em;
+  color: white;
+  padding-bottom: 20px;
+}
+
+.card-2 span {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.card-2 .paragraph-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 5px;
+}
+
+.card-2 .paragraph-container p {
+  margin-left: 10px;
+  color: #e5eff5;
+}
+
+.card-2 #p2 {
+  padding-bottom: 30px;
+  color: #e5eff5;
+}
+
+.card-2 .link-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card-2 .link-container a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  background-color: #c0df34;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  border-radius: 5px;
+  -webkit-box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.295);
+          box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.295);
+}
+
+.card-3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: card3;
+  background-color: #4abfbd;
+  color: white;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.card-3 h1 {
+  font-size: 1.2em;
+  color: white;
+  padding-bottom: 20px;
+}
+
+.card-3 p {
+  line-height: 1.6em;
+  font-size: 16px;
+  padding-right: 70px;
+  color: #e5eff5;
+}
+
+.card {
+  padding: 25px;
+}
+
+/* In case I end up forgetting, will leave this media here */
+@media screen and (max-width: 300px) {
+  .card-3 p {
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    height: 100vh;
+  }
+  .container {
+        grid-template-areas: "card1 card1 " "card2 card3";
+  }
+  /* .card-2 {
+        border-radius: 0 0 0 10px;
+    }
+
+    .card-3 {
+        border-radius: 0 0 10px 0;
+
+        p {
+            width: 100%;
+        }
+    } 
+    
+    Vê isso aq
+    */
+}
+/*# sourceMappingURL=style.css.map */
