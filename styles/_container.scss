@@ -6,7 +6,7 @@
     "card3 card3"
     ;
     justify-content: center;
-    max-width: 800px;
+    max-width: 750px;
 }
 
 .card-1 {
@@ -64,7 +64,7 @@
 
         p {
             margin-left: 10px;
-            color: $light-gray;
+            color: $grayish-blue;
         }
     }
 
@@ -90,6 +90,11 @@
             border-radius: 5px;
             box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.295);
         }
+
+        a:hover {
+            background-color: rgb(13, 185, 85);
+            transition-duration: .2s;
+        }
     }
     
 
@@ -112,51 +117,10 @@
         line-height: 1.6em;
         font-size: 16px;
         padding-right: 70px;
-        color: $light-gray;
+        color: $grayish-blue;
     }
 }
 
 .card {
     padding: 25px;
-}
-
-
-/* In case I end up forgetting, will leave this media here */
-@media screen and (max-width: 300px) {
-    .card-3 {
-        p {
-            padding-right: 0;
-        }
-    }
-}
-
-@media screen and (min-width: 700px) {
-    
-    body {
-        height: 100vh;
-    }
-    
-    .container {
-        grid-template-areas: 
-        "card1 card1 "
-        "card2 card3"        
-        ;
-    }
-
-
-
-   /* .card-2 {
-        border-radius: 0 0 0 10px;
-    }
-
-    .card-3 {
-        border-radius: 0 0 10px 0;
-
-        p {
-            width: 100%;
-        }
-    } 
-    
-    Vê isso aq
-    */
 }
